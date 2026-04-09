@@ -8,6 +8,7 @@ document.getElementById("formulario_sangue").addEventListener("submit", function
     let cidade = document.getElementById("cidade").value;
     let peso = document.getElementById("peso").value;
     let estado = document.getElementById("estado").value;
+    let tipo_sanguineo = document.getElementById("tipo_sanguineo").value;
 
 
     if((nome.length < 3) && (!nome.includes (""))) return alert("Nome Inválido");
@@ -17,8 +18,9 @@ document.getElementById("formulario_sangue").addEventListener("submit", function
     if(cidade == ("")) return alert("Cidade Inválida");
     if(peso < 50) return alert("Peso Inválido");
     if(estado == ("")) return alert("Estado inválido");
+    if(!tipo_sanguineo) return alert("Selecione um tipo sanguíneo")
 
-
+   
 
     document.getElementById("finalizar_cadastro").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
 });
