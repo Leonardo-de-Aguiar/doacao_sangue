@@ -1,0 +1,29 @@
+#formulario_sangue{
+    background-color: wheat;
+    box-shadow: 5px;
+    border-radius: 20px;
+    width: 300px;
+    padding: 25px;
+}
+
+header{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+input,select{
+    width: 101%;
+    padding: 8px;
+    margin: 8px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid white;
+    outline: none;
+}
+main{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
