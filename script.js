@@ -20,7 +20,22 @@ document.getElementById("formulario_sangue").addEventListener("submit", function
     if(estado == ("")) return alert("Estado inválido");
     if(!tipo_sanguineo) return alert("Selecione um tipo sanguíneo")
 
+
+        let informações = [{
+        nome,
+        email,
+        idade,
+        peso,
+        tipo: tipo_sanguineo,
+        telefone,
+        cidade,
+        estado
+    }];
+
    
+
 
     document.getElementById("finalizar_cadastro").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
 });
+
+ alert(JSON.stringify(informações, null,2 ));
